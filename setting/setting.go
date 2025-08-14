@@ -34,6 +34,8 @@ var (
 )
 
 func init() {
+	Git.HomePath = os.Getenv("HOME")
+
 	IsWindows = runtime.GOOS == "windows"
 	if AppVer == "" {
 		AppVer = "dev"

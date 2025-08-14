@@ -9,9 +9,9 @@ var (
 	RunUser string
 	// RunMode is the running mode of Gitea, it only accepts two values: "dev" and "prod".
 	// Non-dev values will be replaced by "prod". ini: "RUN_MODE"
-	RunMode string
+	RunMode = "prod"
 	// IsProd is true if RunMode is not "dev"
-	IsProd bool
+	IsProd = true
 
 	// AppName is the Application name, used in the page title. ini: "APP_NAME"
 	AppName string
